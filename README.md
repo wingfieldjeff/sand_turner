@@ -8,7 +8,7 @@
 -  2x M3x12 bolts
 -  22 AWG wire
 -  CA Glue or m2x5 self tapping screws
--  2x Silicone rings (optional)
+-  2x [Silicone rings](https://www.amazon.com/dp/B06XC41JJW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4&th=1) (optional)
 -  2x Wago 3 wire connectors (optional) 
 -  5v LED strip (optional)
 # Printed Parts
@@ -16,4 +16,16 @@
 - 1x [*Shell Back.stl*](https://github.com/wingfieldjeff/sand_turner/blob/main/cad/Shell%20Back.stl)
 - 2x [*pin.stl*](https://github.com/wingfieldjeff/sand_turner/blob/main/cad/pin.stl)
 - 2x [*roller.stl*](https://github.com/wingfieldjeff/sand_turner/blob/main/cad/roller.stl)
-  
+# Assembly 
+1. Print the above parts.
+2. Place the bearing in the slots in the front shell. They should be a friction fit and this is easiest to do with the shell horizontal.
+3. If using the silicone rings, place them on the rollers
+4. Place the rollers between the bearings and pass the pins through.
+5. On the driven roller (the side with motor mounting holes), peal back the silicone ring (if used) and place either CA Glue or a self tapping m2 screw in the locking hole to secure it to the pin.
+6. Flash [sand_disk.ino](https://github.com/wingfieldjeff/sand_turner/blob/main/sand_disk.ino) to your arduino.
+7. Wire as shown here:![](https://github.com/wingfieldjeff/sand_turner/blob/main/images/wiring.jpg) diagram here (found): ![](https://newbiely.com/images/tutorial/arduino-nano-uln2003-28byj-48-stepper-wiring-diagram.jpg)
+8. Attach the stepper motor with the m3 bolts. They are simply strewed into the plastic. m3 nuts can be used as spacers but are not strictly necessary .
+9. (optionally) solder your LEDs to ground and D6 on the arduino.
+10. Attach the usbc 5v breakout to the back shell with double sided tape or hot glue
+11. Close the shell halves. I left plenty of room for even very messy wiring.
+     
